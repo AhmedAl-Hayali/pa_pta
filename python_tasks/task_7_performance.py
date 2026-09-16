@@ -3,8 +3,7 @@
 # Write a function that checks if a user's email is banned in an efficient way.
 
 def is_banned(email, banned_list):
-    # TODO: Implement the search logic
-    pass
+    return email in  set(banned_list)
 
 # Test
 banned = ["user1@test.com", "user2@test.com"] # Pretend this is 10k items

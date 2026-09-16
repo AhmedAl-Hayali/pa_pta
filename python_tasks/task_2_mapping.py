@@ -3,8 +3,11 @@
 # and values are the count of occurrences.
 
 def count_categories(categories):
-    # TODO: Write your logic here
-    pass
+    cats = set(categories)
+    result = {cat: 0 for cat in cats}
+    for cat in categories:
+        result[cat] += 1
+    return result
 
 # Test Case
 data = ['Brakes', 'Engine', 'Brakes', 'Tools', 'Engine', 'Brakes']
